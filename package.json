@@ -1,0 +1,26 @@
+{
+  "name": "backend_app_node",
+  "version": "1.0.0",
+  "description": "back node + angular",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec npx babel-node src/index.js",
+    "build": "babel src/ --out-dir dist",
+    "start": "node dist/index.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "author": "Miguel",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "sequelize-cli": "^6.5.2",
+    "vuepress": "^1.9.8"
+  },
+  "dependencies": {
+    "sequelize": "^6.28.0"
+  }
+}
